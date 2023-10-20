@@ -4,12 +4,16 @@ import ME from "../../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import { useTranslation } from 'react-i18next';
 
 const about = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation();
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <div className="switcher"></div>
+      <h5>{t("getToKnow")}</h5>
+      <h2>{t("aboutMe")}</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -29,20 +33,21 @@ const about = () => {
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>4+ Japan / India</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>7+ Completed</small>
             </article>
           </div>
 
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-             consequat nisi ut aliquip ex ea commodo.
+            Frontend Developer Having ​5+ Years​ of Experience in Building
+            Large-scale Web Applications. Which includes ​4+ Years of Experience
+            in Angular Framework & Year of Experience in React Js, where I
+            worked for various ​Japanese projects & Clients​ .
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
