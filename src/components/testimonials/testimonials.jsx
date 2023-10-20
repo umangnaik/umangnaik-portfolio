@@ -1,9 +1,6 @@
 import React from 'react'
 import './testimonials.css'
-import AVTR1 from '../../assets/avatar1.jpg'
-import AVTR2 from '../../assets/avatar2.jpg'
-import AVTR3 from '../../assets/avatar3.jpg'
-import AVTR4 from '../../assets/avatar4.jpg'
+import AVTR1 from '../../assets/degree.jpg'
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
 
@@ -15,30 +12,30 @@ import 'swiper/css/pagination';
 
 const data = [{
   avatar: AVTR1,
-  name: "Tina snow",
-  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit., "
+  name: "(MCA) Master of Computer Applications (2013 - 2016)",
+  review: "Completed Master of Computer Applications from South Gujarat University (VNSGU) with 7.70 Cumulative Grade Point Average (CGPA) "
 },
 {
- avatar: AVTR2,
-  name: "Tina snow",
-  review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, "
+ avatar: AVTR1,
+  name: "(BCA) Bachelor of Computer Applications (2010 - 2013)",
+  review: "Completed Bachelor of Computer Applications from South Gujarat University (VNSGU) with 6.70 Cumulative Grade Point Average (CGPA)"
 },
 {
-  avatar: AVTR3,
-   name: "Tina snow",
-   review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,"
+  avatar: AVTR1,
+   name: "(HSC) Higher Secondary School",
+   review: "Completed Higher Secondary Certificate (HSC) from Gujarat Secondary and Higher Secondary Education Board (GSHSEB) With A1 Grade"
  },
  {
-  avatar: AVTR4,
-   name: "Tina snow",
-   review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, "
+  avatar: AVTR1,
+   name: "(SSC) Secondary School",
+   review: "Completed Secondary School Certificate (SSC) from Gujarat Secondary and Higher Secondary Education Board (GSHSEB) With B1 Grade"
  },
 ]
 const testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from client</h5>
-      <h2>Testimonials</h2>
+      <h5>Review My School Background</h5>
+      <h2>Education</h2>
       <Swiper className="container testimonials__container"
       modules={[Pagination]}
       spaceBetween={40}
